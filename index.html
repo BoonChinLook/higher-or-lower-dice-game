@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<img src="background.png" class="background-img"/>
+    <div id="container">
+        <h2>Higher or Lower dice game</h2>
+        <p style="display: inline-block;">
+            Wins: 
+            <label id="winLabel" style="display: inline-block;">0</label>
+            |  Loses:
+            <label id="lossLabel" style="display: inline-block;">0</label>
+        </p>
+    </p>
+    <div id="dice-result"></div>
+    <div id="dice-images"> <img id="default-dice" src="images/dices.png" alt="Default dice"> </div>
+    <div id="game-result"></div>
+    <button onclick="higherDice()">Higher(8-12)</button>
+    <button onclick="lowerDice()">Lower(2-6)</button>
+    <button onclick="endGame()">End Game</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
